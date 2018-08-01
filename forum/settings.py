@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'post',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -119,12 +120,13 @@ USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
-STATIC_URL = '/static/'
+STATIC_URL = '/statics/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "statics"),
 ]
 
+#上传
 MEDIA_ROOT = 'medias'
+#显示
 MEDIA_URL = '/medias/'
