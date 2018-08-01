@@ -49,7 +49,9 @@ def login(request):
                 request.session['nickname'] = user.nickname
                 request.session['icon'] = user.icon.url
                 return redirect('/user/info/')
-
+        else:
+            return render(request,'login.html',
+                          {'error':'密码错误'})
 
     return render(request,'login.html')
 
