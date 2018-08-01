@@ -2,9 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+.idea/
 # C extensions
 *.so
+migrations/
 
 # Distribution / packaging
 .Python
@@ -102,3 +103,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Custom
+.DS_Store
